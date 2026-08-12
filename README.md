@@ -23,7 +23,7 @@ pipx install rmd
 Until the package is published, install directly from GitHub instead:
 
 ```bash
-pipx install git+https://github.com/fschrhunt/rmd.git
+pipx install git+https://github.com/fschrhunt/rmd.git@metadata-cli
 ```
 
 Or, from a checkout:
