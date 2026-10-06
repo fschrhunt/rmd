@@ -62,8 +62,18 @@ Not every privacy risk is file metadata. In particular, rmd does **not** redact 
 ## Development
 
 ```bash
-python3 -m unittest discover -s tests -v
+./x check
+./x test tests.test_cli.MainTests
+./x --help
 ```
+
+`./x` defaults to `check`: Python syntax and indentation validation, shell
+syntax, and the existing unittest suite. Checks do not rewrite source files or
+need ExifTool; subprocess calls are mocked. Python 3 is the only check dependency.
+CI runs the same command on pull requests and pushes to main. There is no
+formatter, linter package, build gate, or changelog convention
+in this checkout. Add focused tests for behavior changes and update this README
+when usage changes; explain N/A items in the pull request template.
 
 ## License
 
