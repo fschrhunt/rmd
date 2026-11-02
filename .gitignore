@@ -4,3 +4,9 @@ build/
 dist/
 config.bat
 node_modules
+
+# Agent worktrees: claude -w, and codex/opencode/pi -w
+/.claude/worktrees/
+/.codex/worktrees/
+/.opencode/worktrees/
+/.pi/worktrees/
