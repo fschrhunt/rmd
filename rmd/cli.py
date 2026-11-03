@@ -15,8 +15,6 @@ from typing import Iterable, Sequence
 
 @dataclass(frozen=True)
 class Result:
-    """The result of preparing one input file."""
-
     source: Path
     destination: Path
     error: str | None = None
@@ -70,7 +68,6 @@ def remove_metadata(source: Path, destination: Path, exiftool: str) -> str | Non
 
 
 def parser() -> argparse.ArgumentParser:
-    """Create the command-line parser for rmd."""
     argument_parser = argparse.ArgumentParser(
         description="Remove embedded metadata using ExifTool without changing originals."
     )

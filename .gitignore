@@ -5,9 +5,13 @@ dist/
 config.bat
 node_modules
 
-# Agent worktrees: claude -w, codex/opencode/pi -w, and ask --worktree
-/.claude/worktrees/
-/.codex/worktrees/
-/.opencode/worktrees/
-/.pi/worktrees/
-/.ask/worktrees/
+.claude/
+.codex/
+.opencode/
+.pi/
+.ask/
+
+.env
+.env.*
+!.env.example
+!.env.*.example
