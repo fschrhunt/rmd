@@ -1,6 +1,7 @@
 version: 2
 multi-ecosystem-groups:
   dependencies:
+    open-pull-requests-limit: 1
     schedule:
       interval: weekly
 updates:
@@ -8,10 +9,8 @@ updates:
     directory: /
     patterns: ["*"]
     multi-ecosystem-group: dependencies
-    open-pull-requests-limit: 1
   - package-ecosystem: pip
     directory: /
     patterns: ["*"]
     multi-ecosystem-group: dependencies
-    open-pull-requests-limit: 1
     versioning-strategy: increase-if-necessary
